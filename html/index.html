@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" contant="width=device-width,initial-scale=1">
   <title>Эндомаркет</title>
-  <link rel="preload" href="fonts/bebasneueregular.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/exo-2-v5-cyrillic_latin-300.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/exo-2-v5-cyrillic_latin-700.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bebasneueregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/exo-2-v5-cyrillic_latin-300.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/exo-2-v5-cyrillic_latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,69 +20,89 @@
           <p class="logo__description">Федеральный поставщик оборудования и инструментов для эндоскопии</p>
         </div>
       </div>
+      <button class="page-header__toggle page-header__toggle--closed" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <nav class="page-header__nav main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="#" class="site-list__link">Продукция</a>
+            <a class="site-list__link" href="#">Продукция</a>
           </li>
           <li class="site-list__item">
-            <a href="#" class="site-list__link">О компании</a>
+            <a class="site-list__link" href="#">О компании</a>
           </li>
           <li class="site-list__item">
-            <a href="#" class="site-list__link">Клиентам</a>
+            <a class="site-list__link" href="#">Клиентам</a>
           </li>
           <li class="site-list__item">
-            <a href="#" class="site-list__link">Контакты</a>
+            <a class="site-list__link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
       <div class="page__header__contacts contact">
         <a class="contact__phone" href="tel:88005558568">8-800-555-85-68</a>
-        <a class="contact__address">г. Москва, ул.Братиславская, д.6, оф.154</a>
+        <a class="contact__address" href="#">г. Москва, ул.Братиславская, д.6, оф.154</a>
         <p class="contact__working-hours">Пн-Пт: 8:30 - 18:00</p>
       </div>
-      <a class="page-header__search">
-        <span class="visually-hidden">Поиск</span>
-      </a>
+      <button href="#" class="page-header__search page-header__search--closed">Поиск
+      </button>
+      <div class="page-header__modal-search search">
+        <h2 class="visually-hidden">Форма поиска</h2>
+        <form class="search__form" action="#" method="post">
+          <input class="search_area" id="search-area" type="search" name="search" placeholder="Что ищем?">
+          <label for="search-area" class="visually-hidden">Поле поиска</label>
+          <button class="search-button visually-hidden" type="submit">Поиск</button>
+        </form>
+      </div>
     </div>
   </header>
 
-<!-- 
-  <img class="page-header__logo-image" src="../img/logo-mobile.svg" width="33" height="38" alt="Логотип">
-  <img class="page-header__logo-name" src="../img/logo-mobile-header.svg" width="101" height="18" alt="Название компании">
-  <button class="page-header__toggle page-header__toggle--closed" type="button">
-    <span class="visually-hidden">Открыть меню</span>
-  </button>
-  <nav class="main-nav main-nav--closed main-nav--nodejs">
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a class="site-list__link site-list__link--active">Главная</a>
-        </li>
-        <li class="site-lislinktem">
-          <a  class="site-list__link" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="site-list__item">
-          <a  class="site-list__link" href="form.html">Подбор программы</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
+  <main class="page-main">
+    <section class="products">
+      <div class="products__container">
+        <h2 class="products__title">Лучшее оборудование для медицины</h2>
+        <div class="products__wrapper">
+          <ul class="products__list product">
+            <li class="product__item">
+              <h3 class="product__title">Гибкие медицинские эндоскопы</h3>
+              <img class="product__image"></img>
+            </li>
+            <li class="product__item">
+              <h3 class="product__title">Жесткие медицинские эндоскопы</h3>
+              <img class="product__image"></img>
+            </li>
+            <li class="product__item">
+              <h3 class="product__title">Оборудование для дезинфекии и стерилизации</h3>
+              <img class="product__image">Электрохирургиеские блоки</img>
+            </li>
+            <li class="product__item">
+              <h3 class="product__title">Инструментарий для гибкой эндоскопии</h3>
+              <img class="product__image"></img>
+            </li>
+            <li class="product__item">
+              <h3 class="product__title">Инструментарий для жесткой эндоскопии</h3>
+              <img class="product__image"></img>
+            </li>
+            <li class="product__item">
+              <h3 class="product__title">Системы хранения</h3>
+              <img class="product__image"></img>
+            </li>
+            <li class="product__item">
+              <h3 class="product__title">Прочие принадлежности</h3>
+              <img class="product__image"></img>
+            </li>
+            <li class="product__item">
+              <h3 class="product__title"></h3>
+              <img class="product__image"></img>
+            </li>
+          </ul>
 
-<main class="page-main">
-  <h1 class="visually-hidden">CAT ENERGY</h1>
-  <section class="description">
-    <div class="description__wrapper">
-     <img class="description__background" src="../img/index-background-desktop.webp" width="720" height="696" alt="Энергия котов">
-     <h2 class="description__title">Функциональное<br>питание для котов</h2>
-     <p class="description__slogan">ЗАНЯЛСЯ СОБОЙ? ЗАЙМИСЬ КОТОМ!</p>
-     <img class="description__image" src="../img/index-can-mobile.webp" width="280" height="270" alt="Фоновая картинка">
-     <button class="description__button" type="button">Подобрать программу</button>
-   </div>
- </section>
+        </div>
 
- <section class="advantages">
+      </div>
+    </section>
+
+ <!-- <section class="advantages">
   <div class="advantages__wrapper">
     <h2 class="visually-hidden">Наши преимущества</h2>
     <ul class="advantages__list">
@@ -170,8 +190,9 @@
 <div class="map">
   <iframe class="map__yandex" src="https://yandex.ru/map-widget/v1/-/CCSxNSLX" width="100%" height="100%" frameborder="1" allowfullscreen="true"></iframe>
 </div>
-
-<footer class="page-footer">
+-->
+</main>
+<!-- <footer class="page-footer">
   <div class="page-footer__wrapper">
     <div class="page-footer__title">
      <img class="page-footer__logo" src="../img/logo-mobile-header.svg" width="128" height="24" alt="Название компании">
@@ -204,7 +225,7 @@
   </div>
 </div>
 </footer>
-<script src="script.js"></script>
 -->
+<script src="script.js"></script>
 </body>
 </html>

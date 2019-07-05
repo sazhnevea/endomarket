@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Эндомаркет</title>
+  <link rel="preload" href="fonts/bebasneueregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/exo-2-v5-cyrillic_latin-300.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/exo-2-v5-cyrillic_latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="page-header">
+    <div class="page-header__container">
+      <div class="page-header__logo logo">
+        <img class="logo__img" src="img/logo.svg" width="100" height="93" alt="Логотип магазина Эндомаркет">
+        <div class="logo__name">
+          <h1 class="logo__title">Эндомаркет</h1>
+          <p class="logo__description">Федеральный поставщик оборудования и инструментов для эндоскопии</p>
+        </div>
+      </div>
+      <button class="page-header__toggle page-header__toggle--closed" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <nav class="page-header__nav main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Продукция</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">О компании</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Клиентам</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="page__header__contacts contact">
+        <a class="contact__phone" href="tel:88005558568">8-800-555-85-68</a>
+        <a class="contact__address" href="#">г. Москва, ул.Братиславская, д.6, оф.154</a>
+        <p class="contact__working-hours">Пн-Пт: 8:30 - 18:00</p>
+      </div>
+      <button type="button" class="page-header__search page-header__search--closed">Поиск
+      </button>
+      <div class="page-header__modal-search search">
+        <h2 class="visually-hidden">Форма поиска</h2>
+        <form class="search__form" action="#" method="post">
+          <input class="search_area" id="search-area" type="search" name="search" placeholder="Что ищем?">
+          <label for="search-area" class="visually-hidden">Поле поиска</label>
+          <button class="search-button visually-hidden" type="submit">Поиск</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="products">
+      <div class="products__container">
+        <h2 class="products__title">Лучшее оборудование для медицины</h2>
+        <div class="products__wrapper">
+          <ul class="products__list product-list">
+            <li class="product-list__item">
+              <h3 class="product-list__title">Гибкие медицинские эндоскопы</h3>
+              <p class="product-list__description"></p>
+              <a class="product-list__button" href='#'>Узнать подробнее</a>
+              <img class="product-list__image" src="img/product-1.png" alt="Гибкие медицинские эндоскопы">
+            </li>
+            <li class="product-list__item">
+              <h3 class="product-list__title">Жесткие медицинские эндоскопы</h3>
+              <p class="product-list__description"></p>
+              <a class="product-list__button" href='#'>Узнать подробнее</a>
+              <img class="product-list__image" src="img/product-2.png" alt="Жесткие медицинские эндоскопы">
+            </li>
+            <li class="product-list__item">
+              <h3 class="product-list__title">Оборудование для дезинфекии и стерилизации</h3>
+              <p class="product-list__description"></p>
+              <a class="product-list__button" href='#'>Узнать подробнее</a>
+              <img class="product-list__image" src="img/product-3.png" alt="Оборудование для дезинфекии и стерилизации">
+            </li>
+            <li class="product-list__item">
+              <h3 class="product-list__title">Электрохирургические блоки</h3>
+              <p class="product-list__description"></p>
+              <a class="product-list__button" href='#'>Узнать подробнее</a>
+              <img class="product-list__image" src="img/product-4.png" alt="Электрохирургические блоки">
+            </li>
+            <li class="product-list__item">
+              <h3 class="product-list__title">Инструментарий для гибкой эндоскопии</h3>
+              <p class="product-list__description"></p>
+              <a class="product-list__button" href='#'>Узнать подробнее</a>
+              <img class="product-list__image" src="img/product-5.png" alt="Инструментарий для гибкой эндоскопии">
+            </li>
+            <li class="product-list__item">
+              <h3 class="product-list__title">Инструментарий для жесткой эндоскопии</h3>
+              <p class="product-list__description">Все представленные полипектолические петли поставляются в сборе с ручкой. Настоящий раздел включает в себя описание и технические характеристики таких позиций каталога.</p>
+              <a class="product-list__button" href='#'>Узнать подробнее</a>
+              <img class="product-list__image" src="img/product-6.png" alt="Инструментарий для жесткой эндоскопии">
+            </li>
+            <li class="product-list__item">
+              <h3 class="product-list__title">Системы хранения</h3>
+              <p class="product-list__description"></p>
+              <a class="product-list__button" href='#'>Узнать подробнее</a>
+              <img class="product-list__image" src="#" alt="Системы хранения">
+            </li>
+            <li class="product-list__item">
+              <h3 class="product-list__title">Прочие принадлежности</h3>
+              <p class="product-list__description"></p>
+              <a class="product-list__button" href='#'>Узнать подробнее</a>
+              <img class="product-list__image" src="#" alt="Прочие принадлежности">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+<ul id="slides">
+    <li class="slide showing">Slide 1</li>
+    <li class="slide">Slide 2</li>
+    <li class="slide">Slide 3</li>
+    <li class="slide">Slide 4</li>
+    <li class="slide">Slide 5</li>
+</ul>
+    
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

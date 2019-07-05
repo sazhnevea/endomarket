@@ -11,6 +11,8 @@
 
 .logo__name {
     padding-top: 5px;
+    box-sizing: border-box;
+    margin-left: 13px;
 }
 
 .logo__title,
@@ -25,17 +27,38 @@
   color: #113b5f;
   font-family: "Bebas Neue Bold";
   font-size: 54px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 54px;
   text-transform: uppercase;
 }
 
 .logo__description {
   color: #201600;
-    font-family: "Proxima Nova";
+    font-family: "Proxima Nova", sans-serif;
     font-size: 12px;
     font-weight: 300;
     line-height: 14px;
-    width: 200px;
+    width: 228px;
     margin: 0 auto;
+}
+
+@media (max-width: @mobile-width) {
+  .logo__name {
+       margin-left: auto;
+  }
+
+  .logo__title {
+    font-size: 28px;
+    line-height: 32px
+  }
+
+  .logo__title,
+  .logo__description {
+    width: auto;
+  }
+
+  .logo__img {
+    width: 70px;
+    height: 100%;
+  }
 }

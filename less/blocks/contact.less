@@ -1,0 +1,73 @@
+.contact__phone,
+.contact__address,
+.contact__working-hours {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	color: #262626;
+	font-family: "Proxima Nova", sans-serif;
+	padding-left: 40px;
+
+}
+.contact__phone {
+	display: block;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 30px;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		opacity: 0.7;
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
+}
+
+.contact__address {
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 16px;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		opacity: 0.7;
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
+}
+
+.contact__working-hours {
+	font-size: 14px;
+	line-height: 30px;
+	font-weight: 700;
+}
+
+.contact__phone::before,
+.contact__address::before,
+.contact__working-hours::before {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 11px;
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	background-image: url('img/sprite.svg');
+	background-repeat: no-repeat;
+}
+
+.contact__phone::before  {
+	background-position: 0 0;
+}
+.contact__address::before  {
+	background-position: 0 42%;
+}
+.contact__working-hours::before  {
+	background-position: 0px 100%;
+}
