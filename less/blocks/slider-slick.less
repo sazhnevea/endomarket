@@ -1,0 +1,122 @@
+.slider-slick {
+  width: 100%;
+  margin: 50px 0;
+}
+
+.slider-slick__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Proxima Nova", sans-serif;
+  color: #3b3b3b;
+}
+
+.slider-slick__title {
+  margin-bottom: 53px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Proxima Nova", sans-serif;
+  color: #3b3b3b;
+  text-transform: uppercase;
+}
+
+
+.slider-slick__button {
+  box-sizing: border-box;
+  padding: 10px 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 60px;
+  font-family: "Proxima Nova", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #aacc3a;
+  border: solid 2px transparent;
+  border-radius: 10px;
+
+  &:hover,
+  &:focus {
+    background-color: #9555af;
+  }
+
+  &:active {
+    color: #000000;
+    opacity: 0.6;
+  }
+}
+
+.slider-slick__description,
+.slider-slick__title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+  padding-right: 31px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 11px;
+  width: 34px;
+  height: 64px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+
+.slick-prev::before {
+  top: -46px;
+  left: -50px;
+  background-image: url("img/arrow-previous.svg");
+}
+
+.slick-next::before {
+  top: -46px;
+  right: -22px;
+  background-image: url("img/arrow-next.svg");
+}
+
+.slider-slick img {
+  width: 371px;
+  height: 225px;
+  margin-bottom: 10px;
+}
+
+
+@media (max-width: @mobile-width) {
+  .slider-slick {
+    flex-wrap: wrap;
+    width: @mobile-container;
+  }
+
+  .slider-slick__description {
+    display: none;
+  }
+
+  .slider-slick img {
+    width: 100px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+
+  .slider-slick__title {
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .slider-slick__button {
+    padding: 5px 5px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}

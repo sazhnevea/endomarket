@@ -1,4 +1,3 @@
-
 const menuButton = document.querySelector('.page-header__toggle');
 const mainNav = document.querySelector('.main-nav');
 

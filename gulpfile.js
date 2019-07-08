@@ -12,6 +12,10 @@ var imagemin = require('gulp-imagemin');
 var svgmin = require('gulp-svgmin');
 var del = require('del');
 var svgSprite = require('gulp-svg-sprite');
+var cleanCSS = require('gulp-clean-css');
+var terser = require('gulp-terser');
+var rename = require("gulp-rename");
+var sourcemaps = require('gulp-sourcemaps');
 
 var svgSpriteConfig = {
     mode: {
@@ -43,15 +47,28 @@ gulp.task('less', function() {
   .pipe(less())
   .pipe(autoprefixer())
   .pipe(sourcemaps.write())
-  .pipe(gulp.dest('build'))
+  .pipe(sourcemaps.init())
+  .pipe(cleanCSS({compatibility: 'ie8'}))
+  .pipe(sourcemaps.write())
+  .pipe(rename("style.min.css"))
+  .pipe(gulp.dest('build/'))
   .on('end', server.reload);
 });
 
 gulp.task('js', function() {
   return gulp.src('js/*.js')
   .pipe(concat('script.js'))
+  .pipe(sourcemaps.init())
+  .pipe(terser())
+  .pipe(sourcemaps.write())
+  .pipe(rename("script.min.js"))
   .pipe(gulp.dest('build'))
   .on('end', server.reload);
+});
+
+gulp.task('slick', function() {
+  return gulp.src('slick/**/*.*')
+  .pipe(gulp.dest('build/slick/'));
 });
 
 gulp.task('svg', function () {
@@ -85,6 +102,6 @@ gulp.task('watch', function() {
 gulp.task('default', gulp.series(
   gulp.task('clean'),
   gulp.task('imagemin'),
-  gulp.parallel('less', 'js', 'html', 'svg', 'fonts'),
+  gulp.parallel('less', 'js', 'slick', 'html', 'svg', 'fonts'),
   gulp.parallel('watch', 'serve'),
-  ));
+));

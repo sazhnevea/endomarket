@@ -7,7 +7,10 @@
   <link rel="preload" href="fonts/bebasneueregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/exo-2-v5-cyrillic_latin-300.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/exo-2-v5-cyrillic_latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="style.min.css">
 </head>
 <body>
 
@@ -65,31 +68,31 @@
           <ul class="products__list product-list">
             <li class="product-list__item">
               <h3 class="product-list__title">Гибкие медицинские эндоскопы</h3>
-              <p class="product-list__description"></p>
+              <p class="product-list__description">Все представленные полипектолические петли поставляются в сборе с ручкой. Настоящий раздел включает в себя описание и технические характеристики таких позиций каталога.</p>
               <a class="product-list__button" href='#'>Узнать подробнее</a>
               <img class="product-list__image" src="img/product-1.png" alt="Гибкие медицинские эндоскопы">
             </li>
             <li class="product-list__item">
               <h3 class="product-list__title">Жесткие медицинские эндоскопы</h3>
-              <p class="product-list__description"></p>
+              <p class="product-list__description">Все представленные полипектолические петли поставляются в сборе с ручкой. Настоящий раздел включает в себя описание и технические характеристики таких позиций каталога.</p>
               <a class="product-list__button" href='#'>Узнать подробнее</a>
               <img class="product-list__image" src="img/product-2.png" alt="Жесткие медицинские эндоскопы">
             </li>
             <li class="product-list__item">
               <h3 class="product-list__title">Оборудование для дезинфекии и стерилизации</h3>
-              <p class="product-list__description"></p>
+              <p class="product-list__description">Все представленные полипектолические петли поставляются в сборе с ручкой. Настоящий раздел включает в себя описание и технические характеристики таких позиций каталога.</p>
               <a class="product-list__button" href='#'>Узнать подробнее</a>
               <img class="product-list__image" src="img/product-3.png" alt="Оборудование для дезинфекии и стерилизации">
             </li>
             <li class="product-list__item">
               <h3 class="product-list__title">Электрохирургические блоки</h3>
-              <p class="product-list__description"></p>
+              <p class="product-list__description">Все представленные полипектолические петли поставляются в сборе с ручкой. Настоящий раздел включает в себя описание и технические характеристики таких позиций каталога.</p>
               <a class="product-list__button" href='#'>Узнать подробнее</a>
               <img class="product-list__image" src="img/product-4.png" alt="Электрохирургические блоки">
             </li>
             <li class="product-list__item">
               <h3 class="product-list__title">Инструментарий для гибкой эндоскопии</h3>
-              <p class="product-list__description"></p>
+              <p class="product-list__description">Все представленные полипектолические петли поставляются в сборе с ручкой. Настоящий раздел включает в себя описание и технические характеристики таких позиций каталога.</p>
               <a class="product-list__button" href='#'>Узнать подробнее</a>
               <img class="product-list__image" src="img/product-5.png" alt="Инструментарий для гибкой эндоскопии">
             </li>
@@ -101,13 +104,13 @@
             </li>
             <li class="product-list__item">
               <h3 class="product-list__title">Системы хранения</h3>
-              <p class="product-list__description"></p>
+              <p class="product-list__description">Все представленные полипектолические петли поставляются в сборе с ручкой. Настоящий раздел включает в себя описание и технические характеристики таких позиций каталога.</p>
               <a class="product-list__button" href='#'>Узнать подробнее</a>
               <img class="product-list__image" src="#" alt="Системы хранения">
             </li>
             <li class="product-list__item">
               <h3 class="product-list__title">Прочие принадлежности</h3>
-              <p class="product-list__description"></p>
+              <p class="product-list__description">Все представленные полипектолические петли поставляются в сборе с ручкой. Настоящий раздел включает в себя описание и технические характеристики таких позиций каталога.</p>
               <a class="product-list__button" href='#'>Узнать подробнее</a>
               <img class="product-list__image" src="#" alt="Прочие принадлежности">
             </li>
@@ -116,32 +119,101 @@
       </div>
     </section>
 
-   <section class="slider">
-            <h1 class="slider__title">Галерея</h1>
-            <div class="slider__container">
-                <input type="radio" id="btn-1" name="toggle" checked>
-                <input type="radio" id="btn-2" name="toggle">
-                <input type="radio" id="btn-3" name="toggle">
-                <div class="slider-controls">
-                    <label for="btn-1"></label>
-                    <label for="btn-2"></label>
-                    <label for="btn-3"></label>
-                </div>                    
-                <div class="slider-inner">
-                    <div class="slider-slides">
-                        <img src="img/slider-1.jpg">
-                        <img src="img/slider-2.jpg">
-                        <img src="img/slider-3.jpg">
-                    </div>                        
-                </div>
-            </div>
-        </section>
+    <section class="slider">
+      <div class="slider__container">
+        <h2 class="slider__title">Акции</h2>
+        <div class="slider-slick">
+          <button type="button" class="slick-prev">Previous</button>
+          <div>
+            <h3 class="slider-slick__title">Актуальные вопросы эндоскопии г. Чебоксары</h3>
+            <a data-fancybox="gallery" href="img/slider-1-big.png">
+              <img width="371" height="225" src="img/slider-1.jpg" alt="Изображение акции">
+            </a>
+            <p class="slider-slick__description">28 февраля 2017 года состоялась научно-практическая
+              конференция "Актуальные вопросы эндоскопии". В
+              конференции приняли участие специалисты из Москвы
+            и Санкт-Петербурга.</p>
+            <a class="slider-slick__button">Подробнее</a>
+          </div>
+          <div>
+            <h3 class="slider-slick__title">Актуальные вопросы эндоскопии г. Чебоксары</h3>
+            <a data-fancybox="gallery" href="img/slider-2-big.png">
+              <img width="371" height="225" src="img/slider-2.jpg" alt="Изображение акции">
+            </a>
+            <p class="slider-slick__description">28 февраля 2017 года состоялась научно-практическая
+              конференция "Актуальные вопросы эндоскопии". В
+              конференции приняли участие специалисты из Москвы
+            и Санкт-Петербурга.</p>
+            <a class="slider-slick__button">Подробнее</a>
+          </div>
+          <div>
+            <h3 class="slider-slick__title">Актуальные вопросы эндоскопии г. Чебоксары</h3>
+            <a data-fancybox="gallery" href="img/slider-3.jpg">
+              <img width="371" height="225" src="img/slider-3.jpg" alt="Изображение акции">
+            </a>
+            <p class="slider-slick__description">28 февраля 2017 года состоялась научно-практическая
+              конференция "Актуальные вопросы эндоскопии". В
+              конференции приняли участие специалисты из Москвы
+            и Санкт-Петербурга.</p>
+            <a class="slider-slick__button">Подробнее</a>
+          </div>
+          <div>
+            <h3 class="slider-slick__title">Актуальные вопросы эндоскопии г. Чебоксары</h3>
+            <a data-fancybox="gallery" href="img/slider-1-big.png">
+              <img width="371" height="225" src="img/slider-1.jpg" alt="Изображение акции">
+            </a>
+            <p class="slider-slick__description">28 февраля 2017 года состоялась научно-практическая
+              конференция "Актуальные вопросы эндоскопии". В
+              конференции приняли участие специалисты из Москвы
+            и Санкт-Петербурга.</p>
+            <a class="slider-slick__button">Подробнее</a>
+          </div>
+          <div>
+            <h3 class="slider-slick__title">Актуальные вопросы эндоскопии г. Чебоксары</h3>
+            <a data-fancybox="gallery" href="img/slider-2-big.png">
+              <img width="371" height="225" src="img/slider-2.jpg" alt="Изображение акции">
+            </a>
+            <p class="slider-slick__description">28 февраля 2017 года состоялась научно-практическая
+              конференция "Актуальные вопросы эндоскопии". В
+              конференции приняли участие специалисты из Москвы
+            и Санкт-Петербурга.</p>
+            <a class="slider-slick__button">Подробнее</a>
+          </div>
+          <div>
+            <h3 class="slider-slick__title">Актуальные вопросы эндоскопии г. Чебоксары</h3>
+            <a data-fancybox="gallery" href="img/slider-3.jpg">
+              <img width="371" height="225" src="img/slider-3.jpg" alt="Изображение акции">
+            </a>
+            <p class="slider-slick__description">28 февраля 2017 года состоялась научно-практическая
+              конференция "Актуальные вопросы эндоскопии". В
+              конференции приняли участие специалисты из Москвы
+            и Санкт-Петербурга.</p>
+            <a class="slider-slick__button">Подробнее</a>
+          </div>
+          <button type="button" class="slick-next">Next</button>
+        </div>
+      </div>
+    </section>
 
-
-
-
-    
   </main>
-  <script src="script.js"></script>
+  
+  <script src="script.min.js"></script>
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.slider-slick').slick({
+        slidesToShow: 3,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
+      });
+    });
+  </script>
+
 </body>
 </html>

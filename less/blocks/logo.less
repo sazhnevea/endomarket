@@ -1,18 +1,18 @@
 .logo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo__img {
-	width: 100px;
-	height: 93px;
+  width: 100px;
+  height: 93px;
 }
 
 .logo__name {
-    padding-top: 5px;
-    box-sizing: border-box;
-    margin-left: 13px;
+  box-sizing: border-box;
+  margin-left: 13px;
+  padding-top: 5px;
 }
 
 .logo__title,
@@ -24,32 +24,32 @@
 }
 
 .logo__title {
-  color: #113b5f;
-  font-family: "Bebas Neue Bold";
-  font-size: 54px;
   font-weight: 700;
+  font-size: 54px;
   line-height: 54px;
+  font-family: "Bebas Neue Bold", sans-serif;
+  color: #113b5f;
   text-transform: uppercase;
 }
 
 .logo__description {
+  width: 228px;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  font-family: "Proxima Nova", sans-serif;
   color: #201600;
-    font-family: "Proxima Nova", sans-serif;
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 14px;
-    width: 228px;
-    margin: 0 auto;
 }
 
 @media (max-width: @mobile-width) {
   .logo__name {
-       margin-left: auto;
+    margin-left: auto;
   }
 
   .logo__title {
     font-size: 28px;
-    line-height: 32px
+    line-height: 32px;
   }
 
   .logo__title,

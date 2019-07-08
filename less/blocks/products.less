@@ -1,38 +1,36 @@
 .products {
-	max-width: @desktop-width;
-	margin: 0 auto;
-	background-color: #f8f8f8;
+  max-width: @desktop-width;
+  margin: 0 auto;
+  background-color: #f8f8f8;
 }
 
 .products__container {
-	max-width: @desktop-container; 
-	margin: 0 auto;
-	text-align: center;
+  max-width: @desktop-container;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .products__title {
-    padding: 0;
-    margin: 0;
-    color: #113b5f;
-    font-family: "Proxima Nova";
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 60px;
-    padding-top: 16px;
-    text-transform: uppercase;
-    margin-bottom: 25px;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  padding-top: 16px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  font-family: "Proxima Nova", sans-serif;
+  color: #113b5f;
+  text-transform: uppercase;
 }
 
 
 @media (max-width: @mobile-width) {
-.products__container {
-
+  .products__container {
     width: @mobile-container;
-}
-.products__title {
+  }
+
+  .products__title {
     font-size: 23px;
-
     line-height: 26px;
-
-}
+  }
 }
