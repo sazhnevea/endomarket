@@ -66,6 +66,12 @@ gulp.task('js', function() {
   .on('end', server.reload);
 });
 
+gulp.task('jquery', function() {
+  return gulp.src('js/jquery/*.*')
+  .pipe(gulp.dest('build/'));
+});
+
+
 gulp.task('slick', function() {
   return gulp.src('slick/**/*.*')
   .pipe(gulp.dest('build/slick/'));
@@ -102,6 +108,6 @@ gulp.task('watch', function() {
 gulp.task('default', gulp.series(
   gulp.task('clean'),
   gulp.task('imagemin'),
-  gulp.parallel('less', 'js', 'slick', 'html', 'svg', 'fonts'),
+  gulp.parallel('less', 'js', 'jquery', 'slick', 'html', 'svg', 'fonts'),
   gulp.parallel('watch', 'serve'),
 ));
