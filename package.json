@@ -7,7 +7,7 @@
     "normalize.less": "^1.0.0"
   },
   "devDependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "browser-sync": "^2.26.7",
     "del": "^4.1.1",
     "gulp": "^4.0.2",
